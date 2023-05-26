@@ -11,6 +11,7 @@ clock = pygame.time.Clock()
 fps= 60
 
 #game Window
+#400 x 400 size
 Side_panel = 400
 screen_width =400 + Side_panel
 screen_height = 400
@@ -30,6 +31,7 @@ def draw_bg():
     screen.blit(background_img, (0,0))
 #Function of drawing panel
 def draw_panel():
+    #Right side
     screen.blit(panel_img , (400,0))
 
 
