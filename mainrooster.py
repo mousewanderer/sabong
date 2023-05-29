@@ -13,9 +13,11 @@ fps= 60
 #game Window
 #400 x 400 size
 Side_panel = 400
+#from teh right side panel
 screen_width =400 + Side_panel
 screen_height = 400
 
+#setting the Display game
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption("Battle")
 
@@ -37,12 +39,13 @@ def draw_panel():
 
 run = True
 
+#running the applictaion
 while run:
     clock.tick(fps)
     
     draw_bg()
     draw_panel()
-    
+    #To quit the game
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             run = True
