@@ -1,6 +1,6 @@
 #file for information
 import json, random
-
+#Function of the health to declare to import it to the user
 def ally_hp():
     file= 'allyhp.json'
     try:
@@ -10,7 +10,7 @@ def ally_hp():
         return None
     else:
         return ally
-
+#Function of the health to declare to import it to the Enemy AI
 def ene_hp():
     file= 'enehp.json'
     try:
@@ -20,13 +20,13 @@ def ene_hp():
         return None
     else:
         return ene
-        
+ # states the curretn health of the user       
 def currentally_hp(value):
             hp=value 
             file= 'allyhp.json'
             with open(file, 'w') as f:
                 json.dump(hp,f)
-
+ # states the curretn health of the enmey AI
 def currentenemy_hp(value):
             hp=value
             file= 'enehp.json'
