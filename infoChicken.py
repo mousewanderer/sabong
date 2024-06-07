@@ -1,34 +1,56 @@
 #file for information
-import json, random
-#Function of the health to declare to import it to the user
+import json
+
+# Function to get ally health
 def ally_hp():
-    file= 'allyhp.json'
+    file = 'allyhp.json'
     try:
         with open(file) as f:
-            ally=  json.load(f)
+            ally = json.load(f)
     except FileNotFoundError:
         return None
     else:
         return ally
-#Function of the health to declare to import it to the Enemy AI
+
+# Function to get enemy health
 def ene_hp():
-    file= 'enehp.json'
+    file = 'enehp.json'
     try:
         with open(file) as f:
-            ene=  json.load(f)
+            ene = json.load(f)
     except FileNotFoundError:
         return None
     else:
         return ene
- # states the curretn health of the user       
+
+# Function to set current ally health
 def currentally_hp(value):
-            hp=value 
-            file= 'allyhp.json'
-            with open(file, 'w') as f:
-                json.dump(hp,f)
- # states the curretn health of the enmey AI
+    hp = value
+    file = 'allyhp.json'
+    with open(file, 'w') as f:
+        json.dump(hp, f)
+
+# Function to set current enemy health
 def currentenemy_hp(value):
-            hp=value
-            file= 'enehp.json'
-            with open(file, 'w') as f:
-                json.dump(hp,f)
+    hp = value
+    file = 'enehp.json'
+    with open(file, 'w') as f:
+        json.dump(hp, f)
+
+
+
+def balance():
+    file= 'balance.json'
+    try:
+        with open(file) as f:
+            ally=  json.load(f)
+    except FileNotFoundError:
+        return 0
+    else:
+        return ally
+
+def getbalance(value):
+    hp=value
+    file= 'balance.json'
+    with open(file, 'w') as f:
+        json.dump(hp,f)
