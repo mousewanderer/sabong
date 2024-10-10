@@ -15,3 +15,6 @@ I am making a sabong(cock fighting) game in python
 > Knighted
 > Sniper
 > Rooster Slayer
+
+
+I actually forgot about this
