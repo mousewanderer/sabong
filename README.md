@@ -1,5 +1,5 @@
-# sabong
-I am making a sabong(cock fighting) game in python
+# Sabong
+I am making a sabong(cock fighting) game in python but I must change all of these shit ( I did I big mistake I though I can conbine two GUI's but no it will stop )
 
 > [!IMPORTANT]
 > Concept:
