@@ -18,3 +18,5 @@ I am making a sabong(cock fighting) game in python but I must change all of thes
 
 
 I actually forgot about this
+
+I WILL MAKE THIS IN GODOT
